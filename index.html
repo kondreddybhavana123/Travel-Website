@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Travel Website homepage</title>
+<style>
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    background:grey;
+}
+
+.logo{
+    font-weight:bold;
+    font-size:22px;
+    color:#f4a825;
+}
+
+nav a{
+    margin:15px;
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+}
+
+
+.hero{
+    height:80vh;
+    background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
+    position:relative;
+    background-size:auto;
+}
+
+.overlay{
+    
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    text-align:center;
+}
+
+.overlay h1{
+    font-size:40px;
+    line-height:1.5;
+}
+
+.overlay span{
+    color:#f4a825;
+}
+
+.buttons{
+    margin-top:20px;
+}
+
+
+.buttons button{
+    padding:10px 20px;
+    margin:5px;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+    color:black;
+    
+}
+.buttons button:hover{
+    border:2px solid black;
+}
+
+.explore{
+    background:#f4a825;
+    color:#fff;
+}
+
+.watch{
+    background:#fff;
+    color:#000;
+}
+
+
+.services{
+    padding:50px;
+    text-align:center;
+    background:white;
+    border-color:black;
+}
+
+.services h2{
+    font-size:28px;
+}
+
+.services span{
+    color:#f4a825;
+}
+
+.services p{
+    margin:10px 0 30px;
+    color:#777;
+}
+
+.service-box{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:#fff;
+    padding:25px;
+    width:250px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+    border:2px solid blue;
+}
+
+.card h3{
+    font-size:30px;
+    margin-bottom:10px;
+    color:blue;
+}
+
+.card h4{
+    margin-bottom:10px;
+}
+
+.card.active{
+    border:2px solid blue;
+}
+.card:hover{
+    border:2px solid orange;
+}
+    </style>
+</head>
+<body>
+
+
+<header>
+    <div class="logo">GO</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="blogg.html">Blog</a>
+        <a href="aboutt.html">About</a>
+        <a href="servicess.html">Services</a>
+        <a href="contactt">Contact </a>
+    </nav>
+    
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="overlay">
+        <h1>
+            <span>Meet</span> People <br>
+            Discover <span>Places</span> <br>
+            <span>Enjoy</span> Time
+        </h1>
+
+        <div class="buttons">
+            <button class="explore">Explore World</button>
+            <button class="watch">▶ Watch Video</button>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services">
+    <h2>Visit World's Best <span>Services</span></h2>
+    <p>Enjoy your time</p>
+
+    <div class="service-box">
+        <div class="card">
+            <h3>🏨</h3>
+            <h4>Destinations</h4>
+            <p>Destinations are specific places or locations that people travel to, often for leisure, business, or exploration. </p>
+        </div>
+
+        <div class="card active">
+            <h3>✈️</h3>
+            <h4>Travel Packages</h4>
+            <p>Travel packages are all-inclusive deals that make planning a trip super easy 😊. They usually bundle flights, hotels, meals, and activities into one price.</p>
+        </div>
+
+        <div class="card">
+            <h3>⛰️</h3>
+            <h4>Adventure Tours</h4>
+            <p>Adventure tours are thrill-seeking experiences designed for those who crave excitement and activity 😊.</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
